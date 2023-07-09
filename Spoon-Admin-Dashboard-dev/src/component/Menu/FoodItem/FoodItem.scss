@@ -1,0 +1,46 @@
+$background-color_red: #fd1b54;
+$background-color_teal: #14cc74;
+
+.container {
+  position: relative;
+  width: 90px;
+  .food-toggle {
+    position: absolute;
+    top: 0.2rem;
+    left: 0.8rem;
+    width: 60px;
+    height: 30px;
+    background-color: $background-color_red;
+    box-shadow: inset 3px 5px 7px #9c1033;
+    border: 2px solid #fd1b54;
+    border-radius: 30px;
+    .food-toggle-button {
+      position: absolute;
+      top: 0.9px;
+      left: 1.5px;
+      width: 24px;
+      height: 24px;
+      box-shadow: 0px 2px 4px rgba($color: #000000, $alpha: 0.8);
+      background: linear-gradient(134.42deg, #b9ffee 0%, #ffffff 85.35%);
+      border-radius: 50%;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+  .food-toggle.active {
+    background-color: $background-color_teal;
+    box-shadow: inset 3px 5px 7px #0d9856;
+    border: 2px #2bdd88 solid;
+    .food-toggle-button {
+      left: 30px;
+    }
+  }
+}
+
+.available.active {
+  display: none;
+}
+
+.unavailable.active {
+  display: none;
+}

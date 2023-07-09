@@ -1,0 +1,15 @@
+$background-color_black: #081a2c;
+$background-color_teal: #14cc74;
+
+.item-availability {
+  background-color: $background-color_black;
+}
+.menu-editor {
+  background-color: $background-color_black;
+}
+.item-availability.active {
+  background-color: $background-color_teal;
+}
+.menu-editor.active {
+  background-color: $background-color_teal;
+}

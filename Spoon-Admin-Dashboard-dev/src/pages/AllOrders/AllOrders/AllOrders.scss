@@ -1,0 +1,16 @@
+$background-color_teal: #14cc74;
+
+.new-orders.active {
+  background-color: $background-color_teal;
+}
+.preparing.active {
+  background-color: $background-color_teal;
+}
+.ready-to-deliver.active {
+  background-color: $background-color_teal;
+}
+
+select {
+  width: 100% !important;
+  outline: none;
+}

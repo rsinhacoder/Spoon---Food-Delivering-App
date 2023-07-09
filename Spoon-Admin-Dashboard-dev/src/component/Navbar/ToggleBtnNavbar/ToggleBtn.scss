@@ -1,0 +1,46 @@
+$background-color_white: #ffffff;
+$background-color_green: #05a4a0;
+
+.container {
+  position: relative;
+  width: 90px;
+  .toggle {
+    position: absolute;
+    top: -0.3rem;
+    left: 0.31rem;
+    width: 80px;
+    height: 35px;
+    background-color: $background-color_white;
+    box-shadow: inset 3px 5px 7px #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 30px;
+    .toggle-button {
+      position: absolute;
+      top: 1px;
+      right: 1px;
+      width: 30px;
+      height: 29px;
+      background: linear-gradient(134.42deg, #40aa90 0%, #ffffff 85.35%);
+      box-shadow: 0px 2px 10px #1c7572;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+  .toggle.active {
+    background-color: $background-color_green;
+    box-shadow: inset 3px 5px 7px #008986;
+    border: 2px solid #01b7b2;
+    .toggle-button {
+      right: 45px;
+    }
+  }
+}
+
+.online.active {
+  color: $background-color_white;
+}
+
+.offline.active {
+  color: $background-color_white;
+}

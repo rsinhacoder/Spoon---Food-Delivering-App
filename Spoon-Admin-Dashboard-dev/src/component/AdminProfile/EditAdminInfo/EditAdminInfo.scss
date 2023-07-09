@@ -1,0 +1,46 @@
+$color_transparent: transparent;
+$color_white: #fff;
+
+/*custom input file*/
+.custom-file-input {
+  color: $color_transparent;
+  &::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  &::before {
+    content: "Upload Profile Picture";
+    color: $color_white;
+    display: inline-block;
+    background: #f39c12;
+    padding: 10px;
+    outline: none;
+    white-space: nowrap;
+    min-width: 20%;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 400;
+    border-radius: 2px;
+    outline: none;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
+      0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  }
+  &:focus {
+    outline: none !important;
+  }
+  &:active {
+    &::before {
+      transform: scale(0.9) translate(0px, 2px);
+      box-shadow: inset 4px 4px 5px 0px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
+.reset-button {
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .custom-file-input::before {
+    min-width: 30%;
+  }
+}

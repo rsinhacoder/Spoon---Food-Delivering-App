@@ -1,0 +1,37 @@
+export const urls = {
+  login: "http://localhost:4000/admin/login",
+  resetPassword: "http://localhost:4000/admin/reset-password",
+  setPassword: "http://localhost:4000/admin/set-password",
+  adminData: "http://localhost:4000/admin/admin-data",
+  adminLogout: "http://localhost:4000/admin/admin-logout",
+  canOrderStatus:
+    "http://localhost:4000/admin/menu-editor/set-order-delivery-status",
+  updateAdminDetails: "http://localhost:4000/admin/update-details",
+  changePassword: "http://localhost:4000/admin/change-password",
+  getAllUsers: "http://localhost:4000/admin/get-all-users",
+  getAllCategories: "http://localhost:4000/admin/menu-editor/get-all-category",
+  getAllItems: "http://localhost:4000/admin/menu-editor/get-all-items",
+  addNewUser: "http://localhost:4000/admin/add-new-user",
+  editUserDetails: "http://localhost:4000/admin/edit-user-details",
+  deleteUser: "http://localhost:4000/admin/delete-user",
+  addNewCategory: "http://localhost:4000/admin/menu-editor/add-new-category",
+  editCategory: "http://localhost:4000/admin/menu-editor/edit-category",
+  deleteCategory: "http://localhost:4000/admin/menu-editor/delete-category",
+  addNewFoodItem: "http://localhost:4000/admin/menu-editor/add-new-item",
+  editFoodItem: "http://localhost:4000/admin/menu-editor/edit-item",
+  deleteFoodItem: "http://localhost:4000/admin/menu-editor/delete-item",
+  setItemAvailibility:
+    "http://localhost:4000/admin/menu-editor/update-item-availability",
+  setCategoryAvailibility:
+    "http://localhost:4000/admin/menu-editor/update-category-availability",
+  getAllordersByStatus: "http://localhost:4000/orders",
+  getAllOrders: "http://localhost:4000/all-orders",
+  getItemDetails: "http://localhost:4000/get-item-details",
+  updateOrderStatus: "http://localhost:4000/order/update-status",
+  searchItemInOrderHistory: "http://localhost:4000/order/order-history/query",
+  searchItemInMenuEditor: "http://localhost:4000/admin/menu-editor/serach",
+  getAllOrderHistory: "http://localhost:4000/all-order-history",
+  getRestaurantOpenStatus: "http://localhost:4000/get-restaurant-open-status",
+  setPopularityStatus:
+    "http://localhost:4000/admin/menu-editor/toggle-popularity",
+};

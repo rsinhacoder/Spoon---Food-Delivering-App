@@ -1,0 +1,9 @@
+.hamburger {
+  display: block !important;
+}
+
+@media (min-width: 1024px) {
+  .hamburger {
+    display: none !important;
+  }
+}
